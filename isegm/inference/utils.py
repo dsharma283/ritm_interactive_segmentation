@@ -20,7 +20,7 @@ def get_time_metrics(all_ious, elapsed_time):
 
 def load_is_model(checkpoint, device, **kwargs):
     if isinstance(checkpoint, (str, Path)):
-        state_dict = torch.load(checkpoint, map_location='cpu')
+        state_dict = torch.load(checkpoint, map_location='cpu', weights_only=False)
     else:
         state_dict = checkpoint
 
@@ -85,7 +85,7 @@ def compute_noc_metric(all_ious, iou_thrs, max_clicks=20):
     over_max_list = []
     for iou_thr in iou_thrs:
         scores_arr = np.array([_get_noc(iou_arr, iou_thr)
-                               for iou_arr in all_ious], dtype=np.int)
+                               for iou_arr in all_ious], dtype=int)
 
         score = scores_arr.mean()
         over_max = (scores_arr == max_clicks).sum()

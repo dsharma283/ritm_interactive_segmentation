@@ -1,14 +1,14 @@
 INTERACTIVE_MODELS_PATH: "./weights"
-EXPS_PATH: "./experiments"
+EXPS_PATH: "/home/users/deveshs/cv/ritm_interactive_segmentation/results"
 
 # Evaluation datasets
-GRABCUT_PATH: "./datasets/GrabCut"
-BERKELEY_PATH: "./datasets/Berkeley"
-DAVIS_PATH: "./datasets/DAVIS"
-COCO_MVAL_PATH: "./datasets/COCO_MVal"
+GRABCUT_PATH: "/home/users/deveshs/cv/datasets/GrabCut"
+BERKELEY_PATH: "/home/users/deveshs/cv/datasets/Berkeley"
+DAVIS_PATH: "/home/users/deveshs/cv/datasets/DAVIS"
+COCO_MVAL_PATH: "/home/users/deveshs/cv/datasets/COCO_MVal"
 
 # Train datasets
-SBD_PATH: "./datasets/SBD"
+SBD_PATH: "/home/users/deveshs/cv/datasets/SBD"
 COCO_PATH: "./datasets/coco2017"
 LVIS_PATH: "./datasets/LVIS"
 OPENIMAGES_PATH: "./datasets/OpenImages"
@@ -22,3 +22,18 @@ IMAGENET_PRETRAINED_MODELS:
   HRNETV2_W32: "./pretrained_models/hrnetv2_w32_imagenet_pretrained.pth"
   HRNETV2_W40: "./pretrained_models/hrnetv2_w40_imagenet_pretrained.pth"
   HRNETV2_W48: "./pretrained_models/hrnetv2_w48_imagenet_pretrained.pth"
+
+#EXPS_PATH: "/home/users/deveshs/cv/SimpleClick/results"
+
+# Evaluation datasets
+# # /home/users/deveshs/cv/datasets/GrabCut
+# GRABCUT_PATH: "/home/users/deveshs/cv/datasets/GrabCut"
+# BERKELEY_PATH: "/home/users/deveshs/cv/datasets/Berkeley"
+# DAVIS_PATH: "/home/users/deveshs/cv/datasets/DAVIS"
+# COCO_MVAL_PATH: "/home/users/deveshs/cv/datasets/COCO_MVal"
+# BraTS_PATH: "/home/users/deveshs/cv/datasets/BraTS20"
+# #ssTEM_PATH: "/playpen-raid2/qinliu/data/ssTEM"
+# OAIZIB_PATH: "/home/users/deveshs/cv/datasets/OAI-ZIB"
+# #OAI_PATH: "/playpen-raid2/qinliu/data/OAI"
+# #HARD_PATH: "/playpen-raid2/qinliu/data/HARD"
+#
